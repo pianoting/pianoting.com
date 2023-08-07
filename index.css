@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'PenCrane';
+    src: url('./Fonts/I.PenCrane-B\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SourceHanSans';
+    src: url('./Fonts/Source\ Han\ Sans\ CN\ ExtraLight.otf');
+}
+
+* {
+    font-family: 'SourceHanSans';
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./Pics/Piano\ Keyboard\ -\ blurred.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+#shadowBox {
+    background-color: rgba(19, 19, 19, 0.75);
+    margin: -17px -7px -17px -7px;
+}
+
+#navBtn {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+#nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 233, 233);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#closeBtn {
+    font-size: 1.5rem;
+    text-align: right;
+    margin: .5rem 1rem;
+    color: black;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+ul div {
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: left;
+}
+
+ul div a {
+    color: black;
+}
+
+ul div a:hover {
+    text-decoration: underline;
+}
+
+#h1 {
+    font-family: 'PenCrane';
+    font-size: 4rem;
+}
+
+#profile {
+    width: 225px;
+    border-radius: 50%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(236, 236, 236, 0.6);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(236, 236, 236, 0.6);
+    box-shadow: 0px 0px 20px 5px rgba(236, 236, 236, 0.6);
+}
+
+.h2 {
+    font-family: 'PenCrane';
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+}
+
+/* #fullQuotes {
+    display: none;
+} */
+
+.link {
+    margin-top: -3rem;
+    color: rgb(190, 190, 190);
+    text-align: center;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+#gallery {
+    width: 300px;
+    height: 450px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 0px 5px;
+    margin-bottom: 5rem;
+}
+
+#gallery img {
+    width: 150px;
+}
+
+#icons {
+    display: block;
+}
+
+i {
+    padding: .5rem;
+}
+
+#contact {
+    padding-bottom: 1rem;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact a {
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 700px) {
+    .name {
+        text-align: right;
+    }
+
+    #gallery {
+        width: 600px;
+        height: 400px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 5px;
+    }
+
+    #gallery img {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #shadowBox {
+        margin: 2rem;
+    }
+
+    #navBtn {
+        display: none;
+    }
+
+    #h1 {
+        padding-top: 4rem;
+    }
+
+    p {
+        margin-right: 4rem;
+        margin-left: 4rem;
+        text-align: justify;
+    }
+
+    #gallery img:hover {
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.9);
+        -moz-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.9);
+    }
+
+    .wrapper {
+        width: 800px;
+        margin: auto;
+    }
+}
